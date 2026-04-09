@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Text to Voice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-blue-600 h-screen flex items-center justify-center">
+
+  <div class="bg-purple-900 p-8 rounded-2xl w-[400px] text-center shadow-lg">
+    <h1 class="text-white text-2xl font-bold mb-4">Text-to-Voice</h1>
+
+    <textarea id="text"
+      class="w-full h-32 p-3 rounded-lg mb-4 outline-none"
+      placeholder="Matnni kiriting..."></textarea>
+
+    <select id="voiceSelect" class="w-full p-2 rounded-lg mb-4"></select>
+
+    <button onclick="speakText()"
+      class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full">
+      Ovoz chiqarish
+    </button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
